@@ -1,0 +1,139 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    width: 100%;
+    background: linear-gradient(135deg, rgb(113, 113, 219), rgba(212, 212, 212, 0.788));
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styles */
+.heading {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 20px auto;
+    color: #fff;
+    padding-top: 35px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+/* Form Layout */
+.form-layout {
+    background-color: #f8f9fa;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d1d1d1;
+    margin-top: 60px;
+}
+
+/* Form Input Fields */
+.input {
+    font-size: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+.input input {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 18px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+.input input:focus {
+    border-color: #3498db;
+    background-color: #eef7ff;
+    outline: none;
+}
+
+/* Layout Heading */
+.layout-heading {
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Description Box */
+#description {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Description Focus */
+#description:focus {
+    border-color: #3498db;
+    background-color: #eef7ff;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: #3498db;
+    font-size: 22px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+.submit-btn:hover {
+    background-color: #2878b5;
+    box-shadow: 2px 3px 4px 2px rgb(71, 73, 68);
+}
+
+/* Submit Button Focus */
+.submit-btn:focus {
+    outline: none;
+    background-color: green;
+}
+.submit-btn{
+    border: 2px solid black;
+    height: 40px;
+    margin-left: 90px;
+    background-color: #5059b9;
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .form-layout {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .heading {
+        width: 80%;
+    }
+}

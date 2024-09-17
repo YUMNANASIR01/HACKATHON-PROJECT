@@ -1,5 +1,4 @@
-
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,8 +15,8 @@ body {
     text-align: center;
     padding: 20px;
     border-radius: 2px;
-    
 }
+
 header h1, header h2 {
     margin: 10px;
     color: #fff;
@@ -29,7 +28,6 @@ header h1 {
 
 header h2 {
     margin-bottom: 50px;
-
 }
 
 .layout-selection {
@@ -40,30 +38,30 @@ header h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  margin-top: 30px;
-    
+    margin-top: 30px;
+    flex-wrap: wrap; /* Added to handle wrapping on small screens */
 }
 
 .resume-card {
     background-color: #6d6dc4;
     border-radius: 8px;
-    margin: 0 10px;
+    margin: 10px;
     padding: 20px;
-    width: 370px;
+    width: calc(50% - 20px); /* Adjust width for responsiveness */
     text-align: center;
     row-gap: 40px;
-   column-gap: 30px;
-   justify-content: space-between;
-   transform: scale(10.10s);
-   transition: transform 0.7s;
-   box-shadow: 2px 2px 2px 2px #ddd;
-   font-size: 23px;
-   font-weight: 700;
-   
+    column-gap: 30px;
+    justify-content: space-between;
+    transform: scale(1);
+    transition: transform 0.7s;
+    box-shadow: 2px 2px 2px 2px #ddd;
+    font-size: 23px;
+    font-weight: 700;
 }
-.resume-card:hover{
+
+.resume-card:hover {
     transform: scale(1.06);
-} 
+}
 
 .resume-card h3 {
     color: #ffffff;
@@ -72,7 +70,6 @@ header h2 {
 
 .resume-card img {
     width: 100%;
-
 }
 
 .resume-card p {
@@ -93,4 +90,29 @@ footer a {
 footer a:hover {
     color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .resume-card {
+        width: calc(100% - 20px); /* Full width with margin */
+    }
+
+    header h1, header h2 {
+        font-size: 1.5em;
+    }
+
+    .resume-card p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1, header h2 {
+        font-size: 1.2em;
+    }
+
+    .resume-card p {
+        font-size: 16px;
+    }
 }

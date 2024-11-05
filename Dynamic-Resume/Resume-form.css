@@ -1,11 +1,11 @@
-/* Universal Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Background */
+
 body {
     width: 100%;
     background: linear-gradient(135deg, rgb(113, 113, 219), rgba(212, 212, 212, 0.788));
@@ -13,22 +13,22 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* Heading Styles */
 .heading {
     width: 50%;
     height: 100px;
     text-align: center;
     font-size: 22px;
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    margin: 20px auto;
+    border-radius: 25px;
+    margin: 50px auto;
     color: #fff;
-    padding-top: 35px;
+    padding-top: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
+    
 }
 
-/* Form Layout */
+
 .form-layout {
     background-color: #f8f9fa;
     width: 40%;
@@ -37,17 +37,16 @@ body {
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border: 2px solid #d1d1d1;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
-/* Form Input Fields */
+
 .input {
     font-size: 20px;
     padding-top: 10px;
     margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input input {
     width: 100%;
     height: 40px;
@@ -60,14 +59,13 @@ body {
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Input Focus Effect */
+
 .input input:focus {
     border-color: #3498db;
     background-color: #eef7ff;
     outline: none;
 }
 
-/* Layout Heading */
 .layout-heading {
     margin-top: 10px;
     text-decoration: underline;
@@ -75,7 +73,6 @@ body {
     color: #333;
 }
 
-/* Description Box */
 #description {
     width: 100%;
     padding: 10px;
@@ -87,14 +84,14 @@ body {
     transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Description Focus */
+
 #description:focus {
     border-color: #3498db;
     background-color: #eef7ff;
     outline: none;
 }
 
-/* Submit Button */
+
 .submit-btn {
     width: 50%;
     height: 50px;
@@ -109,13 +106,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Submit Button Hover Effect */
 .submit-btn:hover {
     background-color: #2878b5;
     box-shadow: 2px 3px 4px 2px rgb(71, 73, 68);
 }
 
-/* Submit Button Focus */
 .submit-btn:focus {
     outline: none;
     background-color: green;
@@ -123,12 +118,14 @@ body {
 
 .submit-btn{
     border: 2px solid black;
-    height: 40px;
-    margin-left: 90px;
+    height: 50px;
+    margin-left: 130px;
     background-color: #5059b9;
+    margin-bottom: 20px;
+    font-size: 24px;
+
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 1200px) {
     .form-layout {
         width: 60%;
